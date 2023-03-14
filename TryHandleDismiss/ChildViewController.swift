@@ -10,6 +10,7 @@ import UIKit
 class ChildViewController: UIViewController {
 
     @IBAction func close(_ sender: Any) {
+        //TODO: I would not like to enforce convention in such cases use         self.presentingViewController?.dismiss(animated: true) instead.
         self.dismiss(animated: true)
     }
 }

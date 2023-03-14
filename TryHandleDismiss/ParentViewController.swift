@@ -33,6 +33,7 @@ class ParentViewController: UIViewController {
         self.present(childViewController, animated: true)
     }
     
+    // TODO: need events to call onPresent and onDismiss
     func onPresent(){
         player.pause()
     }
@@ -47,6 +48,7 @@ class ParentViewController: UIViewController {
         onPresent()
     }
     
+    // TODO: this function is called if ChildViewController is closed by user action. but is not called if it is closed via close button.
     override func dismiss(animated flag: Bool, completion: (() -> Void)? = nil) {
         super.dismiss(animated: flag, completion: completion)
         
